@@ -1,0 +1,10 @@
+<button mat-raised-button id="link-button"
+        [class.mat-elevation-z6]="!hovering"
+        [class.mat-elevation-z12]="hovering && !clicked"
+        [class.mat-elevation-z0]="clicked"
+        [class]="colorThemeForOption(icon)"
+        (mouseover)="hovering = true" (mouseout)="hovering = false"
+        (click)="buttonClicked()"
+        [matTooltip]="options[icon] + ' profil'">
+    <img id="icon" [src]="iconForOption(icon)" alt="Link Icon">
+</button>
