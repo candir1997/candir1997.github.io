@@ -1,6 +1,11 @@
-#header-text {
+#header {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
     width: auto;
-    margin: 16px;
+    //margin: 16px;
     padding: 0;
     text-align: center;
     align-content: center;
