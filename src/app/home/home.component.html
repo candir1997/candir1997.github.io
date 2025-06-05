@@ -1,29 +1,49 @@
-<a href="https://www.sredime.rs/widget/candir" style="opacity: 90%">
-    <button mat-raised-button style="width: 100%; height: fit-content">
-        <h1 style="padding-top: 5%">Zakažite termin OVDE!</h1>
-    </button>
-</a>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 candir-half">
+            <a href="https://www.sredime.rs/widget/candir" style="opacity: 90%">
+                <button mat-raised-button style="width: 100%; height: fit-content">
+                    <h1 style="padding-top: 5%">Zakažite termin OVDE!</h1>
+                </button>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 candir-half">
+            <mat-card class="pink-cards" style="opacity: 90%">
+                <mat-card-header class="padding: 1%">
+                    <mat-card-title id="button-title">Naše socijalne mreže: </mat-card-title>
+                </mat-card-header>
+                <app-links-grid style="margin-top: 1%; margin-bottom: 1%"></app-links-grid>
+            </mat-card>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 candir-half">
+            <mat-card style="color: white; opacity: 90%">
+                <mat-card-header>
+                    <mat-card-title>
+                        Kontakt:
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <h2>
+                        <a href="tel:+381601997223">+381601997223</a>
+                        <br/>
+                        <a href="mailto:salon.candir@gmail.com">salon.candir&#64;gmail.com</a>
+                        <br/>
+                        <a href="https://maps.app.goo.gl/3aT4ognDjKsbndhS8">Bate Brkića 26, 21000 Novi Sad</a>
+                    </h2>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
 
-<mat-card class="pink-cards" style="opacity: 90%">
-    <mat-card-header>
-        <mat-card-title id="button-title">Naše socijalne mreže: </mat-card-title>
-    </mat-card-header>
-    <app-links-grid style="margin-top: 1%; margin-bottom: 1%"></app-links-grid>
-</mat-card>
-
-<mat-card style="color: white; opacity: 90%">
-    <mat-card-header>
-        <mat-card-title>
-            Kontakt:
-        </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <h2>
-            <a href="tel:+381601997223">+381601997223</a>
-            <br/>
-            <a href="mailto:salon.candir@gmail.com">salon.candir&#64;gmail.com</a>
-            <br/>
-            <a href="https://maps.app.goo.gl/3aT4ognDjKsbndhS8">Bate Brkića 26, 21000 Novi Sad</a>
-        </h2>
-    </mat-card-content>
-</mat-card>
+    <div class="row">
+        @for (image of images; track image) {
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 candir-half">
+                <mat-card>
+                    <mat-card-content>
+                        <img style="max-height: 100%; max-width: 100%;" [src]="image">
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        }
+    </div>
+</div>

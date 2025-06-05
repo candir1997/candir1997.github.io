@@ -23,4 +23,18 @@ import {LinksGridComponent} from "../links-grid/links-grid.component";
     styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+    protected images = [
+        'assets/art/3.jpg',
+        'assets/art/1.jpg',
+        'assets/art/11.jpg',
+        'assets/art/4.jpg',
+        'assets/art/12.jpg',
+        'assets/art/5.jpg',
+        'assets/art/7.jpg',
+        'assets/art/2.jpg',
+        'assets/art/9.jpg',
+        'assets/art/15.jpg',
+        'assets/art/17.jpg',
+        'assets/art/13.jpg',
+    ]
 }

@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    background-color: #7c2946 !important;
 }
 
 @import 'assets/material-icons.css';
@@ -245,3 +246,6 @@ $altTheme: (
         font-family: 'Noto Serif';
     }
 }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
